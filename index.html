@@ -397,8 +397,11 @@
       const wrapper = document.querySelector(".slider-wrapper");
       let visibleItems = getVisibleItems();
 
+      let startX = 0;
+      let currentX = 0;
+
       function getVisibleItems() {
-        if (window.innerWidth >= 1024) return 6;
+        if (window.innerWidth >= 1024) return 5;
         if (window.innerWidth >= 768) return 4;
         return 3;
       }
@@ -425,6 +428,24 @@
         }
         updateSliderPosition();
       }
+
+      // Handle touch events
+      wrapper.addEventListener("touchstart", function (e) {
+        startX = e.touches[0].clientX;
+      });
+
+      wrapper.addEventListener("touchmove", function (e) {
+        currentX = e.touches[0].clientX;
+      });
+
+      wrapper.addEventListener("touchend", function () {
+        const diffX = startX - currentX;
+        if (diffX > 50) {
+          nextSlide(); // geser ke kiri
+        } else if (diffX < -50) {
+          prevSlide(); // geser ke kanan
+        }
+      });
 
       window.addEventListener("resize", () => {
         visibleItems = getVisibleItems();
