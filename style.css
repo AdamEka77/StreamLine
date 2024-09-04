@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --576A86: #373f4a;
+  --7d90a8: #7d90a8;
+  --EADB8C: #eadb8c;
+}
+
+body {
+  font-family: "Kanit", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--576A86);
+}
+.navbar-brand {
+  color: white;
+  font-family: "Protest Guerrilla", sans-serif;
+  font-size: 200%;
+}
+.navbar-nav a {
+  color: white;
+  font-family: "Kanit", sans-serif;
+}
+.dropdown-menu a {
+  color: black;
+}
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute; /* Ensure the dropdown is positioned correctly */
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+}
+
+.nav-item.dropdown {
+  position: relative;
+}
+
+.bi-hamburger {
+  color: white;
+}
+
+.form-control {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.form-inline {
+  background-color: white;
+  border-radius: 4px;
+  padding: 1px;
+}
+
+.form-inline svg {
+  cursor: pointer;
+  margin-right: 10px;
+}
+.form-responsive {
+  display: none;
+}
+
+.form-inline input {
+  font-family: "Kanit", sans-serif;
+}
+
+@media (max-width: 992px) {
+  .form-responsive {
+    display: block;
+    display: flex;
+    background-color: white;
+    border-radius: 4px;
+  }
+
+  .form-responsive input {
+    font-family: "Kanit", sans-serif;
+  }
+
+  .form-responsive svg {
+    margin-top: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .form-inline {
+    display: none;
+  }
+}
+
+/* Featured */
+.featured {
+  font-family: "Kanit", sans-serif;
+  margin-top: 50px;
+}
+
+.featured h3 {
+  font-weight: 300;
+  padding-left: 10px;
+  border-left: 2px solid red;
+}
+
+.featured .card {
+  border: none;
+}
+
+.card-body {
+  width: 150%;
+  box-sizing: border-box;
+}
+
+.card-text {
+  font-size: 80%;
+}
+
+.card {
+  overflow: hidden;
+}
+
+.card svg {
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  display: none;
+  cursor: pointer;
+}
+
+.bi-play-fill {
+  color: white;
+}
+
+.card img {
+  cursor: pointer;
+}
+
+.card img:hover {
+  filter: brightness(20%);
+  transition: 0.3s;
+}
+
+.card img:hover + svg {
+  display: block;
+  transition: 0.3s;
+}
+
+.card h5 {
+  font-weight: 300;
+  font-size: 75%;
+}
+
+@media (max-width: 575px) {
+  .card-konten {
+    column-count: 3;
+  }
+}
+
+/* Terbaru */
+.terbaru {
+  margin-top: 50px;
+  position: relative;
+}
+.terbaru h5 {
+  padding-left: 10px;
+  border-left: 2px solid red;
+}
+
+.slider-container {
+  width: 100%; /* Adjust based on your layout */
+  overflow: hidden;
+  position: relative;
+  padding-top: 20px;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-item {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.prev,
+.next {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  right: 10px;
+  top: 0;
+  z-index: 999;
+}
+
+.prev {
+  right: 50px;
+}
+
+.container {
+  position: relative;
+}
+.slider-item img {
+  width: 100%;
+}
+
+/* Default setting for mobile (3 items visible) */
+.slider-item {
+  min-width: calc(100% / 3);
+}
+
+/* Tablet view (4 items visible) */
+@media (min-width: 768px) {
+  .slider-item {
+    min-width: calc(100% / 4);
+  }
+}
+
+/* Desktop/Laptop view (5 items visible) */
+@media (min-width: 1024px) {
+  .slider-item {
+    min-width: calc(100% / 6);
+  }
+}
+
+.slider-item p {
+  margin-top: 10px;
+}
