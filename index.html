@@ -33,7 +33,6 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="#">StreamLine</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -54,6 +53,31 @@
             <path
               fill-rule="evenodd"
               d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+        </button>
+
+        <a class="navbar-brand" href="#">StreamLine</a>
+
+        <button
+          class="navbar-toggler toggler-search"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent1"
+          aria-controls="navbarSupportedContent1"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-search bi-search-responsive"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
             />
           </svg>
         </button>
@@ -137,6 +161,32 @@
               />
             </svg>
           </form>
+          <!-- <form class="my-2 my-lg-0 form-responsive">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+              />
+            </svg>
+          </form> -->
+        </div>
+
+        <div
+          class="collapse navbar-collapse search-form"
+          id="navbarSupportedContent1"
+        >
           <form class="my-2 my-lg-0 form-responsive">
             <input
               class="form-control mr-sm-2"
@@ -331,8 +381,10 @@
         <div class="slider-container">
           <div class="slider-wrapper">
             <div class="slider-item">
-              <img src="img/deadpool.png" alt="" />
-              <p>Deadpool & Wolverine</p>
+              <section>
+                <img src="img/deadpool.png" alt="" />
+                <p>Zack Snyder Justice League</p>
+              </section>
             </div>
             <div class="slider-item">
               <img src="img/deadpool.png" alt="" />
@@ -385,6 +437,26 @@
 
     <!-- Akhir Terbaru -->
 
+    <!-- Deskripsi -->
+    <div class="deskripsi">
+      <div class="container">
+        <h5>List Film</h5>
+        <div class="row1">
+          <img src="img/deadpool.png" alt="" />
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="row1">
+          <img src="img/deadpool.png" alt="" />
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="row1">
+          <img src="img/deadpool.png" alt="" />
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Deskripsi -->
+
     <!-- Footer -->
     <div class="footer">
       <div class="container"></div>
@@ -401,7 +473,7 @@
       let currentX = 0;
 
       function getVisibleItems() {
-        if (window.innerWidth >= 1024) return 5;
+        if (window.innerWidth >= 1024) return 6;
         if (window.innerWidth >= 768) return 4;
         return 3;
       }

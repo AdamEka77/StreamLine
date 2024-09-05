@@ -14,6 +14,8 @@ body {
   font-family: "Kanit", sans-serif;
 }
 
+/* Container */
+
 /* Navbar */
 .navbar {
   background-color: var(--576A86);
@@ -74,12 +76,30 @@ body {
   font-family: "Kanit", sans-serif;
 }
 
+.search-form {
+  position: absolute;
+}
+
+.bi-search-responsive {
+  color: white;
+}
+
 @media (max-width: 992px) {
   .form-responsive {
     display: block;
     display: flex;
     background-color: white;
     border-radius: 4px;
+  }
+
+  .search-form {
+    position: inherit;
+  }
+
+  .navbar-brand {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
   }
 
   .form-responsive input {
@@ -213,6 +233,16 @@ body {
   width: 100%;
 }
 
+.slider-item p {
+  text-align: center;
+}
+
+@media (max-width: 320px) {
+  .slider-item p {
+    font-size: 13px;
+  }
+}
+
 /* Default setting for mobile (3 items visible) */
 .slider-item {
   min-width: calc(100% / 3);
@@ -234,4 +264,30 @@ body {
 
 .slider-item p {
   margin-top: 10px;
+}
+
+/* Deskripsi */
+.deskripsi {
+  margin-top: 50px;
+}
+.deskripsi h5 {
+  padding-left: 10px;
+  border-left: 2px solid red;
+}
+.deskripsi img {
+  width: 150px;
+}
+
+@media (max-width: 576px) {
+  .deskripsi img {
+    width: 100px;
+  }
+}
+
+.deskripsi p {
+  padding-left: 20px;
+}
+.deskripsi .row1 {
+  margin-bottom: 20px;
+  display: flex;
 }
