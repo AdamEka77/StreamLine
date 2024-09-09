@@ -58,6 +58,12 @@ body {
   background: none;
 }
 
+.form-control:focus {
+  outline: none; /* Menghilangkan outline biru default */
+  box-shadow: none; /* Menghilangkan shadow yang muncul saat focus */
+  border-color: transparent; /* Menghilangkan border */
+}
+
 .form-inline {
   background-color: white;
   border-radius: 4px;
@@ -120,6 +126,7 @@ body {
 .featured {
   font-family: "Kanit", sans-serif;
   margin-top: 120px;
+  position: relative;
 }
 
 .featured h3 {
@@ -132,17 +139,16 @@ body {
   border: none;
 }
 
-.card-body {
-  width: 150%;
-  box-sizing: border-box;
-}
+/* .card-body h5 {
+  position: absolute;
+  top: 180px;
+} */
 
 .card-text {
-  font-size: 80%;
-}
-
-.card {
-  overflow: hidden;
+  position: absolute;
+  font-size: 65%;
+  text-align: left;
+  justify-content: left;
 }
 
 .card svg {
@@ -169,11 +175,6 @@ body {
 .card img:hover + svg {
   display: block;
   transition: 0.3s;
-}
-
-.card h5 {
-  font-weight: 300;
-  font-size: 75%;
 }
 
 @media (max-width: 575px) {
@@ -284,6 +285,14 @@ body {
   width: 150px;
 }
 
+.content-item {
+  display: none; /* Semua konten disembunyikan secara default */
+}
+
+.content-item.visible {
+  display: block; /* Konten yang ditampilkan akan menggunakan kelas ini */
+}
+
 .deskripsi {
   position: relative;
 }
@@ -310,7 +319,7 @@ body {
 
 @media (max-width: 320px) {
   .deskripsi section {
-    height: 170px;
+    height: 150px;
   }
 }
 
@@ -330,9 +339,23 @@ body {
   color: white;
 }
 
+.deskripsi .year {
+  padding-left: 5px;
+}
+
+.deskripsi .movie {
+  position: absolute;
+  background: #a89d68;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 5px;
+}
+
 @media (min-width: 576px) {
   .deskripsi p {
-    line-height: 40px;
+    line-height: 30px;
     position: absolute;
     left: 170px;
   }
@@ -347,6 +370,10 @@ body {
 @media (max-width: 576px) {
   .deskripsi img {
     width: 80px;
+  }
+
+  .deskripsi .movie {
+    font-size: 10px;
   }
 
   .deskripsi p {
@@ -368,6 +395,14 @@ body {
 .deskripsi .row1 {
   margin-bottom: 20px;
   display: flex;
+}
+
+.btn-read-more {
+  margin-top: 20px;
+}
+
+#more {
+  display: none;
 }
 
 /* Footer */
