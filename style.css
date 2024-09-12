@@ -20,6 +20,32 @@ body {
 .navbar {
   background-color: var(--576A86);
 }
+
+.nav-movie-responsive {
+  display: none;
+}
+
+.nav-series-responsive {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-movie-responsive {
+    display: block;
+  }
+  .nav-dropdown {
+    display: none;
+  }
+  .nav-series-responsive {
+    display: block;
+  }
+}
+
+.movie-responsive-desc {
+  line-height: 30px;
+  font-weight: 200;
+}
+
 .navbar-brand {
   color: white;
   font-family: "Protest Guerrilla", sans-serif;
@@ -146,9 +172,15 @@ body {
 
 .card-text {
   position: absolute;
-  font-size: 65%;
+  font-size: 75%;
   text-align: left;
   justify-content: left;
+}
+
+@media (max-width: 320px) {
+  .card-text {
+    font-size: 60%;
+  }
 }
 
 .card svg {
@@ -372,6 +404,11 @@ body {
     width: 80px;
   }
 
+  .deskripsi section {
+    border-bottom: 1px solid #0000008f;
+    height: 150px;
+  }
+
   .deskripsi .movie {
     font-size: 10px;
   }
@@ -399,6 +436,9 @@ body {
 
 .btn-read-more {
   margin-top: 20px;
+  width: 100%;
+  padding: 2px;
+  font-size: 15px;
 }
 
 #more {
