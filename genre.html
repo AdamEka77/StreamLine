@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Protest+Guerrilla&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="genre.css" />
+
+    <title>StreamLine</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            fill="currentColor"
+            class="bi bi-list bi-hamburger"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+        </button>
+
+        <a class="navbar-brand" href="index.html">StreamLine</a>
+
+        <button
+          class="navbar-toggler toggler-search"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent1"
+          aria-controls="navbarSupportedContent1"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-search bi-search-responsive"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+            />
+          </svg>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown nav-dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-film"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm4 0v6h8V1zm8 8H4v6h8zM1 1v2h2V1zm2 3H1v2h2zM1 7v2h2V7zm2 3H1v2h2zm-2 3v2h2v-2zM15 1h-2v2h2zm-2 3v2h2V4zm2 3h-2v2h2zm-2 3v2h2v-2zm2 3h-2v2h2z"
+                  />
+                </svg>
+                Movies
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Most Watched</a>
+                <a class="dropdown-item" href="#">Latest</a>
+                <a class="dropdown-item" href="#">Oldest </a>
+              </div>
+            </li>
+
+            <section class="nav-movie-responsive">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  role="button"
+                  data-toggle=""
+                  aria-expanded="false"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-film"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm4 0v6h8V1zm8 8H4v6h8zM1 1v2h2V1zm2 3H1v2h2zM1 7v2h2V7zm2 3H1v2h2zm-2 3v2h2v-2zM15 1h-2v2h2zm-2 3v2h2V4zm2 3h-2v2h2zm-2 3v2h2v-2zm2 3h-2v2h2z"
+                    />
+                  </svg>
+                  Movies
+                </a>
+                <div class="movie-responsive-desc">
+                  <div class="">
+                    <a class="" href="#">- Most Watched</a>
+                  </div>
+                  <div>
+                    <a class="" href="#">- Latest</a>
+                  </div>
+                  <div>
+                    <a class="" href="#">- Oldest </a>
+                  </div>
+                </div>
+              </li>
+            </section>
+
+            <li class="nav-item dropdown nav-dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-tv"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5M13.991 3l.024.001a1.5 1.5 0 0 1 .538.143.76.76 0 0 1 .302.254c.067.1.145.277.145.602v5.991l-.001.024a1.5 1.5 0 0 1-.143.538.76.76 0 0 1-.254.302c-.1.067-.277.145-.602.145H2.009l-.024-.001a1.5 1.5 0 0 1-.538-.143.76.76 0 0 1-.302-.254C1.078 10.502 1 10.325 1 10V4.009l.001-.024a1.5 1.5 0 0 1 .143-.538.76.76 0 0 1 .254-.302C1.498 3.078 1.675 3 2 3zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2"
+                  />
+                </svg>
+                TV Series
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Most Watched</a>
+                <a class="dropdown-item" href="#">Latest</a>
+                <a class="dropdown-item" href="#">Oldest </a>
+              </div>
+            </li>
+
+            <section class="nav-series-responsive">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  role="button"
+                  data-toggle=""
+                  aria-expanded="false"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-tv"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5M13.991 3l.024.001a1.5 1.5 0 0 1 .538.143.76.76 0 0 1 .302.254c.067.1.145.277.145.602v5.991l-.001.024a1.5 1.5 0 0 1-.143.538.76.76 0 0 1-.254.302c-.1.067-.277.145-.602.145H2.009l-.024-.001a1.5 1.5 0 0 1-.538-.143.76.76 0 0 1-.302-.254C1.078 10.502 1 10.325 1 10V4.009l.001-.024a1.5 1.5 0 0 1 .143-.538.76.76 0 0 1 .254-.302C1.498 3.078 1.675 3 2 3zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2"
+                    />
+                  </svg>
+                  TV Series
+                </a>
+                <div class="movie-responsive-desc">
+                  <div class="">
+                    <a class="" href="#">- Most Watched</a>
+                  </div>
+                  <div>
+                    <a class="" href="#">- Latest</a>
+                  </div>
+                  <div>
+                    <a class="" href="#">- Oldest </a>
+                  </div>
+                </div>
+              </li>
+            </section>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                role="button"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-folder-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3m-8.322.12q.322-.119.684-.12h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981z"
+                  />
+                </svg>
+                Genre
+              </a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-3"
+              type="search"
+              placeholder="Search..."
+              aria-label="Search"
+              id="search-item"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+              id="search-button"
+              onclick="searchAndRedirect()"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+              />
+            </svg>
+          </form>
+          <!-- <form class="my-2 my-lg-0 form-responsive">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+              />
+            </svg>
+          </form> -->
+        </div>
+
+        <div
+          class="collapse navbar-collapse search-form"
+          id="navbarSupportedContent1"
+        >
+          <form class="my-2 my-lg-0 form-responsive">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              id="search-item"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+              id="search-button"
+              onclick="searchAndRedirect()"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+              />
+            </svg>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">StreamLine</h1>
+        <p class="lead">Watch your favorite movie here</p>
+      </div>
+    </div>
+    <!-- Akhir Jumbotron -->
+
+    <!-- Genre -->
+    <div class="genre">
+      <div class="container">
+        <h3>Genre</h3>
+        <div class="row1">
+          <div>
+            <h2>Action</h2>
+          </div>
+          <div>
+            <h2>Adventure</h2>
+          </div>
+          <div>
+            <h2>Animation</h2>
+          </div>
+          <div>
+            <h2>Anime</h2>
+          </div>
+          <div>
+            <h2>Biography</h2>
+          </div>
+          <div>
+            <h2>Comedy</h2>
+          </div>
+          <div>
+            <h2>Crime</h2>
+          </div>
+          <div>
+            <h2>Documentary</h2>
+          </div>
+          <div>
+            <h2>Drama</h2>
+          </div>
+          <div>
+            <h2>Drama China</h2>
+          </div>
+          <div>
+            <h2>Drama Korea</h2>
+          </div>
+          <div>
+            <h2>Drama Thai</h2>
+          </div>
+          <div>
+            <h2>Drama Jepang</h2>
+          </div>
+          <div>
+            <h2>Family</h2>
+          </div>
+          <div>
+            <h2>Fantasy</h2>
+          </div>
+          <div>
+            <h2>History</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Genre -->
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="garis-bawah">
+          <div class="row">
+            <div class="col-lg-3">
+              <h1>StreamLine</h1>
+              <p>
+                StreamLine adalah platform streaming film, series, anime, drakor
+                subtitle indonesia nomor 1 di Indonesia dan menyediakan kualitas
+                terbaik yang ada dipasaran Indonesia secara gratis dan didukung
+                oleh server yang mumpuni, namun tidak seperti platform streaming
+                lainnya, StreamLine ingin menyediakan layanan nonton film dengan
+                kualitas bagus dan tidak ada bayaran apapun untuk menikmati film
+                atau series yang ada disitus StreamLine ini, karena tidak semua
+                wilayah di Indonesia memiliki bioskop untuk menonton film-film
+                terbaru.
+              </p>
+            </div>
+            <div class="col-lg-3 ml-auto">
+              <h5>Category</h5>
+              <p>Action</p>
+              <p>Adventure</p>
+              <p>Anime</p>
+              <p>Animation</p>
+              <p>Comedy</p>
+              <p>Drama</p>
+              <p>Horror</p>
+              <p>Sci-Fi</p>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-lg-5 copyright">
+            <h6>Copyright © by STREAMLINE. All Rights Reserved.</h6>
+          </div>
+          <div class="col-lg-5 copyright ml-auto navbar-footer">
+            <p>Bantuan</p>
+            <p>DMCA</p>
+            <p>Privacy</p>
+            <p>Discord</p>
+            <p>Telegram</p>
+            <p>Instagram</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Footer -->
+    <!--  Javascript -->
+    <script>
+      document
+        .getElementById("search-item")
+        .addEventListener("keypress", function (event) {
+          if (event.key === "Enter") {
+            event.preventDefault();
+            searchAndRedirect();
+          }
+        });
+
+      function searchAndRedirect() {
+        const searchbox = document
+          .getElementById("search-item")
+          .value.toUpperCase();
+        window.location.href = `search-results.html?query=${encodeURIComponent(
+          searchbox
+        )}`;
+      }
+
+      const search = () => {
+        const searchbox = document
+          .getElementById("search-item")
+          .value.toUpperCase();
+        const storeitems = document.getElementById("content-list");
+        const contentitem = document.querySelectorAll(".content-item");
+        const pname = storeitems.getElementsByTagName("p");
+
+        for (var i = 0; i < pname.length; i++) {
+          let match = contentitem[i].getElementsByTagName("p")[0];
+
+          if (match) {
+            let textvalue = match.textContent || match.innerHTML;
+
+            if (textvalue.toUpperCase().indexOf(searchbox) > -1) {
+              contentitem[i].style.display = "";
+            } else {
+              contentitem[i].style.display = "none";
+            }
+          }
+        }
+      };
+    </script>
+    <script>
+      // Menentukan jumlah konten yang akan ditampilkan sekaligus
+      const batchSize = 7;
+
+      // Mengambil semua elemen konten
+      const contentItems = document.querySelectorAll(".content-item");
+
+      // Mengambil tombol Read More
+      const readMoreBtn = document.getElementById("readMoreBtn");
+
+      // Variabel untuk melacak berapa banyak konten yang telah ditampilkan
+      let currentlyVisible = 0;
+
+      // Fungsi untuk menampilkan batch berikutnya dari konten
+      function showMoreContent() {
+        // Tampilkan konten berikutnya berdasarkan batchSize
+        for (let i = currentlyVisible; i < currentlyVisible + batchSize; i++) {
+          if (contentItems[i]) {
+            contentItems[i].classList.add("visible");
+          }
+        }
+
+        // Update jumlah konten yang telah ditampilkan
+        currentlyVisible += batchSize;
+
+        // Jika semua konten sudah ditampilkan, sembunyikan tombol Read More
+        if (currentlyVisible >= contentItems.length) {
+          readMoreBtn.style.display = "none";
+        }
+      }
+
+      // Menambahkan event listener pada tombol Read More
+      readMoreBtn.addEventListener("click", showMoreContent);
+
+      // Menampilkan batch pertama saat halaman dimuat
+      showMoreContent();
+    </script>
+    <script>
+      let currentIndex = 0;
+      const wrapper = document.querySelector(".slider-wrapper");
+      let visibleItems = getVisibleItems();
+
+      let startX = 0;
+      let currentX = 0;
+
+      function getVisibleItems() {
+        if (window.innerWidth >= 1024) return 6;
+        if (window.innerWidth >= 768) return 4;
+        return 3;
+      }
+
+      function updateSliderPosition() {
+        const itemWidth = 100 / visibleItems;
+        wrapper.style.transform = `translateX(-${itemWidth * currentIndex}%)`;
+      }
+
+      function nextSlide() {
+        if (currentIndex < wrapper.children.length - visibleItems) {
+          currentIndex++;
+        } else {
+          currentIndex = 0;
+        }
+        updateSliderPosition();
+      }
+
+      function prevSlide() {
+        if (currentIndex > 0) {
+          currentIndex--;
+        } else {
+          currentIndex = wrapper.children.length - visibleItems;
+        }
+        updateSliderPosition();
+      }
+
+      // Handle touch events
+      wrapper.addEventListener("touchstart", function (e) {
+        startX = e.touches[0].clientX;
+      });
+
+      wrapper.addEventListener("touchmove", function (e) {
+        currentX = e.touches[0].clientX;
+      });
+
+      wrapper.addEventListener("touchend", function () {
+        const diffX = startX - currentX;
+        if (diffX > 50) {
+          nextSlide(); // geser ke kiri
+        } else if (diffX < -50) {
+          prevSlide(); // geser ke kanan
+        }
+      });
+
+      window.addEventListener("resize", () => {
+        visibleItems = getVisibleItems();
+        updateSliderPosition();
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

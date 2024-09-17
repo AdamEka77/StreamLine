@@ -534,3 +534,23 @@ body {
   border-right: 1px solid rgba(255, 255, 255, 0.39); /* Garis hitam di sekitar teks */
   padding-right: 5px;
 }
+
+/* Genre */
+.genre h2 {
+  background-color: #1c2024;
+  color: white;
+  padding: 10px;
+  font-size: 150%;
+}
+
+.row1 {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 576px) {
+  .row1 {
+    display: block;
+  }
+}
